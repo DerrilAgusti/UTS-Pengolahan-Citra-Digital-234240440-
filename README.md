@@ -1,4 +1,4 @@
-# UTS-Pengolahan-Citra-Digital-234240440-
+# UTS Pengolahan Citra Digital - Ganjil 2025/2026
 
 Repositori ini berisi proyek Ujian Tengah Semester (UTS) untuk mata kuliah Pengolahan Citra Digital. Proyek ini mencakup implementasi berbagai teknik pengolahan citra menggunakan Jupyter Notebook.
 
