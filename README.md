@@ -1,23 +1,118 @@
-# UTS Pengolahan Citra Digital - Ganjil 2025/2026
+# UTS Pengolahan Citra Digital
 
-Repositori ini berisi proyek Ujian Tengah Semester (UTS) untuk mata kuliah Pengolahan Citra Digital. Proyek ini mencakup implementasi berbagai teknik pengolahan citra menggunakan Jupyter Notebook.
+Repository ini berisi pengerjaan UTS mata kuliah Pengolahan Citra Digital. Pembahasan mencakup transformasi citra grayscale, visualisasi histogram, serta filtering citra menggunakan kernel konvolusi.
 
-## Deskripsi Proyek
+## Identitas
 
-Proyek ini dibuat sebagai bagian dari UTS Pengolahan Citra Digital dengan NIM 23424044. Notebook utama yang berisi implementasi dapat ditemukan di file `UTS_PengolahanCitraDigital_23424044.ipynb`.
+Nama: Derril Agusti Fachrezy  
+NIM: 23424044  
+Program Studi: Informatika  
+Mata Kuliah: Pengolahan Citra Digital  
+Dosen Pengampu: Anggay Luri Pramana, S.Kom., M.Kom  
 
-## Cara Menjalankan
+## Isi Repository
 
-1. Pastikan Anda memiliki Jupyter Notebook atau JupyterLab terinstal.
-2. Clone repositori ini.
-3. Jalankan notebook dengan perintah `jupyter notebook UTS_PengolahanCitraDigital_23424044.ipynb`.
+Repository ini terdiri dari beberapa file utama:
 
-## Teknologi yang Digunakan
+1. `UTS_PengolahanCitraDigital_23424044.ipynb`  
+   File Google Colab berisi kode program untuk pengerjaan soal nomor 1 dan nomor 2.
+
+2. `Jawaban UTS Pengolahan Citra 1&2.txt`  
+   File berisi analisis hasil pengolahan citra untuk soal nomor 1 dan nomor 2.
+
+3. `Jawaban UTS Nomor3.pdf`  
+   File berisi jawaban UTS soal nomor 3.
+
+
+## Soal Nomor 1
+
+Pada soal nomor 1 dilakukan transformasi citra grayscale menggunakan dua metode, yaitu transformasi negatif dan transformasi logaritmik.
+
+### Rumus Transformasi Negatif
+
+```text
+G = 255 - F
+```
+
+### Rumus Transformasi Logaritmik
+
+```text
+G = c × log(1 + F)
+c = 255 / log(1 + max(F))
+```
+
+### Output
+
+Output dari soal nomor 1 meliputi:
+
+- Citra original
+- Citra negatif
+- Citra logaritmik
+- Histogram citra original
+- Histogram citra negatif
+- Histogram citra logaritmik
+
+## Soal Nomor 2
+
+Pada soal nomor 2 dilakukan proses filtering menggunakan tiga jenis kernel konvolusi, yaitu Low Pass Filter, High Pass Filter, dan Band Pass Filter.
+
+### Low Pass Filter
+
+```text
+(1/9) × [[1, 1, 1],
+         [1, 1, 1],
+         [1, 1, 1]]
+```
+
+### High Pass Filter
+
+```text
+[[-1, -1, -1],
+ [-1,  8, -1],
+ [-1, -1, -1]]
+```
+
+### Band Pass Filter
+
+```text
+[[ 0, -1,  0],
+ [-1,  5, -1],
+ [ 0, -1,  0]]
+```
+
+### Output
+
+Output dari soal nomor 2 meliputi:
+
+- Citra original
+- Hasil Low Pass Filter
+- Hasil High Pass Filter
+- Hasil Band Pass Filter
+- Nilai piksel rata-rata dari setiap hasil
+
+## Tools yang Digunakan
 
 - Python
-- Jupyter Notebook
-- Library pengolahan citra seperti OpenCV, PIL, atau lainnya (sesuai dengan isi notebook)
+- Google Colab
+- OpenCV
+- NumPy
+- Matplotlib
+- PIL
 
-## Lisensi
+## Cara Menjalankan Program
 
-Proyek ini dibuat untuk tujuan akademik.
+1. Buka file `UTS_PCD.ipynb` di Google Colab.
+2. Upload citra grayscale yang akan digunakan.
+3. Jalankan setiap cell program secara berurutan.
+4. Amati hasil transformasi citra, histogram, dan filtering.
+5. Baca hasil analisis pada file `analisis.txt`.
+
+## Hasil Analisis Singkat
+
+Transformasi negatif membalik nilai intensitas citra, sehingga area terang menjadi gelap dan area gelap menjadi terang. Transformasi logaritmik meningkatkan intensitas piksel rendah sehingga detail pada area gelap lebih mudah terlihat.
+
+Low Pass Filter menghasilkan citra yang lebih halus atau blur. High Pass Filter menonjolkan tepi dan perubahan intensitas tajam. Band Pass Filter pada kernel yang digunakan menghasilkan efek penajaman citra.
+
+## Tujuan Repository
+
+Repository ini dibuat untuk memenuhi tugas UTS mata kuliah Pengolahan Citra Digital pada materi transformasi intensitas citra dan filtering berbasis konvolusi.
