@@ -101,11 +101,11 @@ Output dari soal nomor 2 meliputi:
 
 ## Cara Menjalankan Program
 
-1. Buka file `UTS_PCD.ipynb` di Google Colab.
+1. Buka file `UTS_PengolahanCitraDigital_23424044.ipynb` di Google Colab.
 2. Upload citra grayscale yang akan digunakan.
 3. Jalankan setiap cell program secara berurutan.
 4. Amati hasil transformasi citra, histogram, dan filtering.
-5. Baca hasil analisis pada file `analisis.txt`.
+5. Baca hasil analisis pada file `Jawaban UTS Pengolahan Citra 1&2.txt`.
 
 ## Hasil Analisis Singkat
 
